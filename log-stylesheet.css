@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+
+
+* {
+     margin: 0px;
+     padding: 0px;
+
+}
+
+
+
+.head {
+     height: 55px;
+     color: rebeccapurple;
+     font-size: 2rem;
+     font-family: 'Kaushan Script', cursive;
+     text-shadow: 2px 2px #341313;
+     text-align: center;
+}
+
+.head-reg {
+     height: 57px;
+     color: rebeccapurple;
+     font-size: 2rem;
+     font-family: 'Kaushan Script', cursive;
+     text-shadow: 2px 2px #341313;
+     text-align: center;
+}
+#reg_bg {
+     background: linear-gradient(90deg, rgba(123, 49, 136, 0.883) 20%, rgba(222, 88, 16, 0.737) 55%, rgba(117, 8, 176, 0.608) 100%);
+     min-height: 700px;
+}
+
+.frm-box {
+
+     height: 400px;
+     width: 62%;
+     position: relative;
+     top: 135px;
+     left: 1%;
+     background-color: #ba68c8;
+     opacity: 0.8;
+     border: 2px solid #341313;
+     border-radius: 30px;
+     display: flex;
+     justify-content: center;
+     box-sizing: border-box;
+     padding: 25px 25px;
+     animation-name: movebox;
+     animation-duration: 3s;
+     animation-fill-mode: forwards
+}
+
+#frm_input {
+
+     padding-top: 66px;
+     padding-left: 120px;
+     flex-direction: row;
+     box-sizing: border-box;
+}
+.frm_reg-input{
+     padding-top: 45px;
+     padding-left: 120px;
+     flex-direction: row;
+     box-sizing: border-box;  
+}
+button {
+     margin: 20px;
+     padding: 10px 10px;
+     background-color: #a8642d;
+     font-family: 'Rubik Moonrocks', cursive;
+     color: #1f0303;
+     border-radius: 6px;
+}
+
+input {
+     margin: 6px 6px;
+     padding: 8px 8px;
+     border-radius: 26px;
+     box-shadow: 2px 2px white;
+     border: none;
+}
+
+.agree{
+     font-size: 0.9rem;
+    
+}
+.terms:visited{
+     color: #040405;
+    
+    
+}
+.have:visited{
+     color: #040405;
+}
+.forget:visited{
+     color: #040405;
+}
+.left_img {
+     margin-left: 1px;
+     padding-top: 12%;
+     padding-right: 55px;
+     padding-left: 5px;
+}
+
+#img {
+
+     z-index: -1;
+     width: 149px;
+     height: 230px;
+
+}
+
+@keyframes movebox {
+     from {
+          left: 1%;
+     }
+
+     to {
+          left: 35%;
+          background-color: #8534a8f7;
+     }
+}
+
+@media screen and (max-width: 665px) {
+     .frm-box {
+          left: 1%;
+     }
+
+     #frm_input {
+
+          padding-left: 140px;
+     }
+
+     .left_img {
+          padding-top: 36%;
+          padding-right: 55px;
+          padding-left: 5px;
+     }
+
+     #img {
+          width: 120px;
+          height: 180px;
+     }
+
+     input {
+          width: 140px;
+     }
+     input[type=checkbox]{
+          width: 15px;
+     }
+
+     @keyframes movebox {
+          from {
+               left: 1%;
+          }
+
+          to {
+               left: 21%;
+               background-color: #8534a8f7;
+          }
+     }
+}
+
+@media screen and (max-width: 395px) {
+     .head-reg{
+          height: 35px;
+          font-size: 1rem;
+     }
+     .frm-box {
+          width: 52%;
+          left: 1%;
+     }
+     input {
+          width: 100px;
+          margin-left: 90px;
+     }
+     .left_img {
+          margin-top: 30px;
+          padding-right: 150px;
+     }
+     button{
+          margin-left: 100px;
+     }
+
+     #img {
+          width: 105px;
+          height: 170px;
+     }
+     .terms{
+padding-left: 68px;
+
+}
+.forget{
+     padding-left: 82px;
+}
+}
